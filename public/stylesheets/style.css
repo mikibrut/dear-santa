@@ -6,3 +6,92 @@ body {
 a {
   color: #00B7FF;
 }
+
+nav {
+  display: flex;
+  justify-content: center;
+  margin-top: -60px;
+  margin-left: -10px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  transition: .5s;
+}
+
+ul:hover li a {
+filter: blur(5px);
+}
+
+ul:hover li a:hover {
+font-size: 20px;
+filter: blur(0px);
+background-color: #23a6d5;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+  margin-bottom: 10px;
+}
+
+.cards img {
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+
+.cards img:hover {
+  transform: scale(1.05);
+}
+
+.cards a {
+  text-decoration: none;
+  background-color: lightblue;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  background-color: #15172b;
+  border-radius: 20px;
+  box-sizing: border-box;
+  height: 370px;
+  padding: 20px;
+  width: 320px;
+  margin-left: -25px;
+}
+
+.form label {
+  margin-top: 10px;
+  color: white;
+}
+
+.form input {
+  margin-top: 10px;
+}
+
+.lastinput {
+  margin-bottom: 10px;
+}
+
+.form button {
+  margin: 0 auto;
+  width: 90px;
+}
